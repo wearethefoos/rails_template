@@ -7,7 +7,7 @@ FactoryGirl.define do
     "Test User #{n}"
   end
   
-  factory :usah do
+  factory :user do
     name  { FactoryGirl.generate(:name) }
     email { FactoryGirl.generate(:email) }
     password "secret"
