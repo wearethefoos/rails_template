@@ -1,0 +1,6 @@
+%h1 Welcome
+
+-if user_signed_in?
+  = link_to "Sign out", destroy_user_session_path, :method => :delete
+
+%p This is the home page at Home#index.
