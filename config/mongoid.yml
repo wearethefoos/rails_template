@@ -1,10 +1,10 @@
 development:
   host: localhost
-  database: sharefoodwith_us_development
+  database: my_app_development
 
 test:
   host: localhost
-  database: sharefoodwith_us_test
+  database: my_app_test
 
 # set these environment variables on your prod server
 production:
