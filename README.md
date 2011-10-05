@@ -16,4 +16,6 @@ Fork off and clone!
 
 Find and replace all `MyApp` occurences with `YourAppName`.
 
+Also have a looksy in config/mongoid.yml and change the database names appropriately.
+
 Enjoy :)
