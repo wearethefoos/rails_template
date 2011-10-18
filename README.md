@@ -71,6 +71,19 @@ def Post
   
   after_save :save_photos
   
+  # forward validation to embedded documents
+  def valid?(*)
+     _run_validation_callbacks { super }
+     validate_photos
+  end
+
+  # Validate photos callback
+  def validate_photos
+    photos.each do |photo|
+      photo.send(:_run_validation_callbacks)
+    end
+  end
+  
   # Save photos callback
   def save_photos
     photos.each do |photo|
