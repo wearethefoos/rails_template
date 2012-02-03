@@ -48,7 +48,9 @@ group :test do
   gem 'guard-cucumber'
   gem 'guard-spork'
   gem 'rb-fsevent'
-  gem 'growl_notify'
+  gem 'growl'       # for Mac OS X, 
+  # gem 'notifu'    # for Windows
+  # gem 'libnotify' # for Linux + Gnome
   gem 'mongoid-rspec', :require => false
   gem 'database_cleaner'
   gem 'launchy'
