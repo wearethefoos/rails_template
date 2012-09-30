@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails'
 gem 'thin'
 
 gem 'mongoid', :git => 'https://github.com/mongoid/mongoid.git'
@@ -22,11 +22,11 @@ gem 'sprockets'
 
 gem 'devise'
 gem 'cancan'
-gem "omniauth", :git => 'https://github.com/intridea/omniauth.git', :tag => 'v0.2.6'
+gem "omniauth"
 gem 'oa-openid'
 
 gem 'carrierwave'
-gem 'carrierwave-mongoid', :git => 'https://github.com/foxycoder/carrierwave-mongoid.git'
+gem 'carrierwave-mongoid'
 gem 'fog'
 gem 'mini_magick'
 
@@ -48,7 +48,8 @@ group :test do
   gem 'guard-cucumber'
   gem 'guard-spork'
   gem 'rb-fsevent'
-  gem 'growl'       # for Mac OS X, 
+  gem 'terminal-notifier-guard' # for Mac OS X 10.8
+  # gem 'growl'       # for Mac OS X,
   # gem 'notifu'    # for Windows
   # gem 'libnotify' # for Linux + Gnome
   gem 'mongoid-rspec', :require => false
