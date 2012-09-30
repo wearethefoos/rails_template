@@ -1,5 +1,6 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
+notification :terminal_notifier, :app_name => "MyApp ::", :activate => 'com.googlecode.iTerm2'
 
 guard 'rspec', :version => 2 do
   watch(%r{^spec/.+_spec\.rb$})
